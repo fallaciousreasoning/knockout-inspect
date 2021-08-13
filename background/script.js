@@ -1,12 +1,12 @@
 "use strict";
 browser.contextMenus.create({
     id: "inspect-context",
-    title: "Inspect Knockout Context",
+    title: "Context",
     contexts: ["page", "link"]
 });
 browser.contextMenus.create({
     id: "inspect-data",
-    title: "Inspect Knockout Data",
+    title: "Data",
     contexts: ["page", "link"]
 });
 browser.contextMenus.onClicked.addListener(function (info, tab) {
