@@ -8,14 +8,13 @@ const logData = (element) => {
         console.log("Window doesn't appear to have knockout");
         return;
     }
-    const data = window.ko.dataFor(element);
+    const data = ko.dataFor(element);
     console.log(data);
 };
 window.addEventListener('contextmenu', e => {
     clickedElement = e.target;
 });
 browser.runtime.onMessage.addListener((message) => {
-    console.log(message);
     if (!clickedElement)
         return;
     logData(clickedElement);
