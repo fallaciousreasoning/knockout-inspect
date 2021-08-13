@@ -9,14 +9,14 @@
     "permissions": ["contextMenus"],
     "content_scripts": [{
         "matches": [
-            "*://*.mozilla.org/*"
+            "<all_urls>"
         ],
         "js": [
-            "content_script.js"
+            "content/script.js"
         ]
     }],
     "background": {
-        "scripts": "background/script.js"
+        "scripts": ["background/script.js"]
     },
     "browser_action": {
         "default_icon": {
