@@ -14,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/firefox-webext-browser": "^82.0.1",
+    "@types/knockout": "^3.4.71",
     "typescript": "^4.3.5",
     "web-ext": "^6.2.0"
   }
