@@ -4,7 +4,9 @@
     "description": "An inspector for Knockout JS",
     "version": "0.0.1",
     "icons": {
-        "64": "icons/icon.png"
+        "64": "icons/icon-64.png",
+        "128": "icons/icon-128.png",
+        "512": "icons/icon-512.png"
     },
     "permissions": ["contextMenus"],
     "content_scripts": [{
@@ -17,19 +19,5 @@
     }],
     "background": {
         "scripts": ["background/script.js"]
-    },
-    "browser_action": {
-        "default_icon": {
-            "64": "icons/icon.png"
-        },
-        "default_popup": "browserAction/index.html",
-        "default_title": "knockout-inspect"
-    },
-    "page_action": {
-        "default_icon": {
-            "64": "icons/icon.png"
-        },
-        "default_popup": "pageAction/index.html",
-        "default_title": "knockout-inspect"
     }
 }
