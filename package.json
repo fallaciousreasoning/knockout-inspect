@@ -13,12 +13,11 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@types/firefox-webext-browser": "^82.0.1",
     "@types/knockout": "^3.4.71",
-    "typescript": "^4.3.5"
-  },
-  "devDependencies": {
+    "typescript": "^4.3.5",
     "run-pty": "^2.3.2",
     "web-ext": "^6.3.0"
   }
