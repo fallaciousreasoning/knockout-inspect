@@ -6,7 +6,7 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id: "inspect-data",
-    title: "Data",
+    title: "Data Bar",
     contexts: ["page", "link"]
 });
 
@@ -21,4 +21,4 @@ browser.contextMenus.onClicked.addListener(function (info, tab) {
             });
             break;
     }
-})
+});

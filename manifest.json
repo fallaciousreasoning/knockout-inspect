@@ -14,10 +14,10 @@
             "<all_urls>"
         ],
         "js": [
-            "content/script.js"
+            "content/script.ts"
         ]
     }],
     "background": {
-        "scripts": ["background/script.js"]
+        "scripts": ["background/script.ts"]
     }
 }
