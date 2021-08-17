@@ -6,9 +6,7 @@
     "webext-dev": {}
   },
   "scripts": {
-    "start": "run-pty % npm run typescript % npm run build",
-    "typescript": "tsc --watch",
-    "build": "web-ext run --source-dir . --firefox=nightly --start-url=https://knockoutjs.com/",
+    "start": "parcel manifest.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -23,7 +21,6 @@
     "@types/firefox-webext-browser": "^82.0.1",
     "@types/knockout": "^3.4.71",
     "parcel": "^2.0.0-rc.0",
-    "run-pty": "^2.3.2",
     "typescript": "^4.3.5",
     "web-ext": "^6.3.0"
   }
