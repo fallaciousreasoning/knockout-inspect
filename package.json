@@ -7,6 +7,7 @@
   },
   "scripts": {
     "start": "parcel manifest.json",
+    "run": "web-ext run --source-dir dist/ --firefox nightly --start-url https://knockoutjs.com/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
