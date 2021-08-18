@@ -9,15 +9,8 @@
         "512": "icons/icon-512.png"
     },
     "permissions": ["contextMenus"],
-    "content_scripts": [{
-        "matches": [
-            "<all_urls>"
-        ],
-        "js": [
-            "content/script.ts"
-        ]
-    }],
     "background": {
         "scripts": ["background/script.ts"]
-    }
+    },
+    "devtools_page": "devtools/index.html"
 }
