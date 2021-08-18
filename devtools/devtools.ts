@@ -4,9 +4,14 @@ const setExpression = function() {
     let selectedElement = $0;
     if (!selectedElement) return "No element selected";
 
-    const data = window.ko.dataFor(selectedElement);
-    if (!data) return "No data for element";
-    return window.ko.toJS(data);
+    const context = window.ko.contextFor(selectedElement);
+    if (!context) return "No knockout context for element";
+
+    (window as any)['$context'] = context;
+    (window as any)['$data'] = window.ko.dataFor(selectedElement);
+    window.foo = 7
+
+    return context;
 };
 
 (async () => {
